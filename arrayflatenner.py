@@ -1,4 +1,5 @@
 '''
+__author__= Tatiana Lapshina, v1.1, 10/03/2021
 This code below will flatten array(list or tuple) of numbers:
 example: (1,18,(19,6,(100,32)))-->[1, 18, 19, 6, 100, 32]
 final array will be a list 

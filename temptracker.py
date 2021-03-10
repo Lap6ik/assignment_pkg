@@ -1,7 +1,7 @@
 '''
+@Tatiana Lapshina, v1.1, 10/03/2021
 This script requires python 3.4 or higher
 '''
-#import random
 import statistics
 
 class TempTracker(object):
