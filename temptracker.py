@@ -1,7 +1,14 @@
+'''
+This script requires python 3.4 or higher
+'''
 #import random
 import statistics
 
 class TempTracker(object):
+    '''
+    args: *args
+    type: list
+    '''
 
     MIN_TEMP=0
     MAX_TEMP=111
@@ -30,6 +37,10 @@ class TempTracker(object):
             raise TypeError('Make sure argument of TempTracker is a list. Ex: tp=TempTracker([2,45,70])')
 
     def args_amount(func):
+        '''
+        Decorator:
+        checking the number of the arguments passed to the func method
+        '''
         def wrapper(self, *args):
             if len(args)>1:
                 print ("Too many arguments to insert, pass just one argument")
@@ -47,6 +58,10 @@ class TempTracker(object):
         return self.temperatures.append(new_record)
 
     def records_exist(func):
+        '''
+        Decorator:
+        checking that the self.temperatures has at least one number in it
+        '''
         def wrapper(self):
             if not self.temperatures: 
                 print ('No existing records, cannot get requested statistic data')
@@ -84,6 +99,10 @@ class TempTracker(object):
 # tmp.insert((13))
 # tmp.insert(73)
 # print (tmp.temperatures)
+
+# tmpr = TempTracker((5,78,90))
+# print(tmpr.temperatures)
+
 
 
 

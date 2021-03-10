@@ -1,5 +1,5 @@
 '''
-This code below will flatten array of numbers:
+This code below will flatten array(list or tuple) of numbers:
 example: (1,18,(19,6,(100,32)))-->[1, 18, 19, 6, 100, 32]
 final array will be a list 
 '''
@@ -7,7 +7,6 @@ from threading import Thread
 
 a = [[1,2,[3,8]],4,12,[72, 94, [11,12,[1,2,[18,[19,[1]]]]]]]
 l = (1,18,(19,6,(100,32)))
-#c = {'car':{'first':'honda', 'second':'toyota'}}
 
 b=[]
 def flattenElement(element):
