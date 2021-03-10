@@ -1,5 +1,5 @@
 '''
-@Tatiana Lapshina, v1.1, 10/03/2021
+__author__= Tatiana Lapshina, __version__=1.1, 10/03/2021
 This script requires python 3.4 or higher
 '''
 import statistics
